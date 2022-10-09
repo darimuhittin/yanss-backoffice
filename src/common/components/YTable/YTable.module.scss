@@ -1,0 +1,39 @@
+.ytable__container {
+  width: 100%;
+
+  .ytable__spinner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  table {
+    color: #eee;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+
+    thead {
+      background-color: #222;
+      border-radius: 10px;
+      border-collapse: separate !important;
+    }
+    tbody {
+      color: #222;
+      tr:nth-child(odd) {
+        background-color: #eee;
+      }
+      tr:nth-child(even) {
+        background-color: #fff;
+      }
+    }
+    th,
+    td {
+      margin: 0;
+      padding: 0.5rem;
+
+      :last-child {
+        border-right: 0;
+      }
+    }
+  }
+}

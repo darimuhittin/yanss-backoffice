@@ -1,0 +1,48 @@
+.header__container {
+  padding: 0px;
+  background-color: #111;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  color: #ddd;
+  z-index: 999;
+
+  .header__menuContainer {
+    position: relative;
+
+    .menu__level1:hover a {
+      color: red !important;
+    }
+
+    .menu__level1:hover .menu__sub {
+      display: flex;
+    }
+    .menu__level1 {
+      .menu__sub {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #111;
+
+        .menu__subContainer {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+.header__icon-container {
+  border: 1px solid black;
+  padding: 2px 6px;
+  display: flex;
+  align-items: center;
+}
+.cars-select {
+  height: 100%;
+}
+@media screen and (min-width: 767px) {
+  .header__container {
+    display: flex;
+  }
+}

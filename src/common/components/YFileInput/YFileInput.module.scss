@@ -1,0 +1,12 @@
+.yFileInput__btn {
+  background-color: #222;
+  border-radius: 8px;
+  color: #ddd;
+  font-weight: 600;
+  padding: 4px 10px;
+  &:hover {
+    cursor: pointer;
+    background-color: #666;
+    outline: 2px solid;
+  }
+}
